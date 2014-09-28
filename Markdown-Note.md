@@ -12,3 +12,8 @@ Several on line renders:
   这个站点有如下几个特点：
   - 支持 math expression, flow chart, table
   - render 效果紧凑，与word完美兼容。
+
+## Instructions
+
+- <kbd>_</kbd> : subscript
+- <kbd>^</kbd> : superscript

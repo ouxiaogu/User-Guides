@@ -17,12 +17,12 @@ _Table 1. LATEX 2ε Escapable “Special” Characters_
 ```
 $ \$    % \%    \_ _   } \}   & \&   # \#   { \{
 ```
-### function
+### symbols
 
-`$\propto$` $\propto$
-
-## 2. Instruction
-
+- <kbd>\propto</kbd> : 正比于 $\propto$ 
+- <kbd>\leq</kbd> : 小于等于 $\leq$ 
+- <kbd>_</kbd> :  下标 subscript
+- <kbd>^</kbd> :  上标 superscript
 
 
 ## 3. space adjustment
