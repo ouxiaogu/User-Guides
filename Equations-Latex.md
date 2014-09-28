@@ -1,4 +1,4 @@
-# LeTex Frequently Used Symbols
+# LeTex Math Expression Frequently Used Symbols
 
 标签（空格分隔）： User-Guides
 [TOC]
