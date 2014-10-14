@@ -24,7 +24,8 @@
 
 ## 2. sublime text
 
-Go [here](https://github.com/ouxiaogu/tool_st2.git) to download sublime text 2 with all my settings and package 
+Go [here](https://github.com/ouxiaogu/tool_st2.git) to download sublime text 2 with all my settings and package .
+
 You can find all the sublime text 2 package under its [package center](https://sublime.wbond.net),
 
 ```json
@@ -60,19 +61,19 @@ SublimeREPL - run an interpreter inside ST2 (Lua, Python , R, Ruby, Scala...)
 
 **github sync steps** 
 
-1. add all the file hierachy  under this folder to a git repository 
+1). add all the file hierachy  under this folder to a git repository 
 
 ```shell
 git add *
 ```
 
-2. commit all the modification into the repository
+2). commit all the modification into the repository
 
 ```shell 
 git commit -m "1st comment" 
 ```
 
-3. push to github web server, origin is src name, mater is dst branch name.
+3). push to github web server, origin is src name, mater is dst branch name.
 
 ```shell 
 git push origin master  
