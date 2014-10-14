@@ -65,13 +65,18 @@ SublimeREPL - run an interpreter inside ST2 (Lua, Python , R, Ruby, Scala...)
 ```shell
 git add *
 ```
+
 2. commit all the modification into the repository
 
-```shell git commit -m "1st comment" ```
+```shell 
+git commit -m "1st comment" 
+```
+
 3. push to github web server, origin is src name, mater is dst branch name.
 
-```shell git push origin master  ```
-
+```shell 
+git push origin master  
+```
 
 ## flow
 
