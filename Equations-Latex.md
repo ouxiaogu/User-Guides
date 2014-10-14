@@ -1,4 +1,4 @@
-# LeTex Math Expression Frequently Used Symbols
+# LaTex Math Expression Frequently Used Symbols
 
 标签（空格分隔）： User-Guides
 [TOC]
@@ -15,7 +15,7 @@ Reference
 ### special characters
 _Table 1. LATEX 2ε Escapable “Special” Characters_
 ```
-$ \$    % \%    \_ _   } \}   & \&   # \#   { \{
+$ \$    % \%    _ \_   } \}   & \&   # \#   { \{
 ```
 ### symbols
 
@@ -23,6 +23,7 @@ $ \$    % \%    \_ _   } \}   & \&   # \#   { \{
 - <kbd>\leq</kbd> : 小于等于 $\leq$ 
 - <kbd>_</kbd> :  下标 subscript
 - <kbd>^</kbd> :  上标 superscript
+- <kbd>\sum\limits_{i=0}^{n} </kbd> :  上标 superscript
 
 
 ## 3. space adjustment
