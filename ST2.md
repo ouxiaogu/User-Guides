@@ -18,12 +18,32 @@ You can find all the sublime text 2 package under its [package center](https://s
 ```
 
 (1) **MarkdownEditing**
-Powerful Markdown package for Sublime Text with better syntax understanding and good color schemes .
+[MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing) is a Powerful Markdown package for Sublime Text with better syntax understanding and good color schemes .
 
 (2) **SublimeREPL**
 SublimeREPL - run an interpreter inside ST2 (Lua, Python , R, Ruby, Scala...)
+
+**Open in ST as Context Menu**
+
+```shell
+@echo off
+SET st2Path=D:\Program Files\sublime_text\sublime_text.exe
+ 
+rem add it for all file types
+@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text 2"         /t REG_SZ /v "" /d "Open with Sublime Text 2"   /f
+@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text 2"         /t REG_EXPAND_SZ /v "Icon" /d "%st2Path%,0" /f
+@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text 2\command" /t REG_SZ /v "" /d "%st2Path% \"%%1\"" /f
+ 
+rem add it for folders
+@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text 2"         /t REG_SZ /v "" /d "Open with Sublime Text 2"   /f
+@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text 2"         /t REG_EXPAND_SZ /v "Icon" /d "%st2Path%,0" /f
+@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text 2\command" /t REG_SZ /v "" /d "%st2Path% \"%%1\"" /f
+pause
+```
 
 ## 2. FAQ
 
 Q1.  [Change the default syntax associated to some specific file type](http://stackoverflow.com/questions/7574502/set-default-syntax-to-different-filetype-in-sublime-text-2/8014142#8014142) ?
 A : `View -> Syntax -> Open all with current extension as... ->[your syntax choice].`
+
+
