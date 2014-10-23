@@ -27,10 +27,12 @@ C:\Localdata\D\Program Files\Sublime [master +2 ~0 -0 !]> git push -f
 Everything up-to-date
 ```
 ### 4. add a unstable rc branch
+
 1. git branch -->  显示当前remote server branch list和remote branch的选择
 2. git checkout -b rc1 --> 会在local 创建一个 branch “rc1”
 3. git push origin rc1 --> orgin 相当于local sever(source,且已经切换到了local的rc1 branch了),后面的rc1 则是remote sever branch.
 4. git branch --> 再次显示发现已经有rc1,且已被选择
+
 ```
 C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
 * master
@@ -44,4 +46,22 @@ To https://github.com/ouxiaogu/lua_note.git
 C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
   master
 * rc1
+```
+
+### 5. remove files from the GitHub repository 
+
+Q: [How to remove files from the GitHub repository?](http://stackoverflow.com/questions/11121352/how-to-remove-files-from-the-github-repository)
+A: `git rm --cached $file_path`, to keep the local file and remove it from the repository
+
+```
+C:\Localdata> git rm --cached .\9blog\BF.md
+rm '9blog/BF.md'
+C:\Localdata> git rm --cached .\9blog\OT.md
+rm '9blog/OT.md'
+C:\Localdata\D\Note\lua [rc1 +0 ~0 -2 | +3 ~0 -0 !]> git commit -m "r141023"
+[rc1 d7209d0] r141023
+ 2 files changed, 658 deletions(-)
+ delete mode 100644 9blog/BF.md
+ delete mode 100644 9blog/OT.md
+C:\Localdata\D\Note\lua [rc1 +3 ~0 -0 !]> git push
 ```
