@@ -20,3 +20,4 @@ Several on line renders:
 
 - <kbd>_</kbd> : subscript
 - <kbd>^</kbd> : superscript
+- <kbd>__ __</kbd>: __underline__ 
