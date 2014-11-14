@@ -20,3 +20,11 @@ Several on line renders:
 
 - <kbd>_</kbd> : subscript
 - <kbd>^</kbd> : superscript
+
+
+This is an more advanced improvement requirement of PLT-27991.
+
+- it it more convenient to make the function as a check box beside **Center(um) & Pixel size(nm)**
+- currently, in PLT-27991 : check **Keep zoomed scale when switch gauge**, the center and pixel size will be kept
+- further requirement: if **keep GDS viewer option** is enabled ,the user checked term i.e. AI , RI , will be kept and redrawn after the action such as zoom in /out , shift center , switch gauge and switch SEM spec entry. Currently , only **Sem ALGN** can be kept.
+Sorry for the workload , but this improvement have been in PPT list for a long time , until I saw function **Keep zoomed scale when switch gauge** recently.
