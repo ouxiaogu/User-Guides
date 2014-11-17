@@ -20,6 +20,8 @@ Several on line renders:
 
 - <kbd>_</kbd> : subscript
 - <kbd>^</kbd> : superscript
+
+
 \#1. $job = bmp_24b, using .bmp SEM image with 24 bits color depth, the job abort with the following info:
 
 ```bash
