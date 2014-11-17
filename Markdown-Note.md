@@ -22,6 +22,8 @@ Several on line renders:
 - <kbd>^</kbd> : superscript
 
 
+It seems only 8 bits bmp image is supported in binary, I test two jobs with bmp in $workpath = /gpfs/PEG/FEM/peyang/data/r201501/MOD5962/
+
 \#1. $job = bmp_24b, using .bmp SEM image with 24 bits color depth, the job abort with the following info:
 
 ```bash
