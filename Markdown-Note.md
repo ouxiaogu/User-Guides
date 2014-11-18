@@ -22,15 +22,53 @@ Several on line renders:
 - <kbd>^</kbd> : superscript
 
 
-It seems only 8 bits bmp image is supported in binary, I test two jobs with bmp in $workpath = /gpfs/PEG/FEM/peyang/data/r201501/MOD5962/
+PRD Template
 
-\#1. $job = bmp_24b, using .bmp SEM image with 24 bits color depth, the job abort with the following info:
+# Show source symmetric information after loading source
 
-```bash
-[peyang@flogin1 fnode054]$ less -NM leaf6.log | grep 8mb-9_7-1.bmp
-/gpfs/PEG/FEM/peyang/data/r201501/MOD5962/bmp/h/data/dummydb/calibrate/job1/sem/c1/8mb-9_7-1.bmp: not a 8 bit bmp
-/gpfs/PEG/FEM/peyang/data/r201501/MOD5962/bmp/h/data/dummydb/calibrate/job1/sem/c1/8mb-9_7-1.bmp: failed to load header 
-Load SEM image /gpfs/PEG/FEM/peyang/data/r201501/MOD5962/bmp/h/data/dummydb/calibrate/job1/sem/c1/8mb-9_7-1.bmp fails
-```
+##  Documentation History
 
-\#2. $job = bmp_256, 256=2^8, it means image depth = 8 bits, can be represented in 0~255, the job run successfully.
+| Name |  Remark | Date |
+--- | --- | --- |
+Peng-cheng | Initial draft | 11/18/2014
+ | Reviewed |  
+  | Approved   |
+
+## Product Background, Requirement understanding
+
+###  1.  Background 
+
+Some essential utility functions in the gauge table should also be supported in the Sem Spec table.
+  
+The ticket created is PLT-29276 .
+
+###  2.  Requirement understanding
+
+#### GUI requirements
+
+\#1. **edit cell** : 
+
+We should enable some cells' editing in the SEM spec table, i.e. , CENTER_X, CENTER_Y, COST_WT, DETECT_EGDE, ALGN_EDGE.
+currently , there are three methods to do it , but all have its limits.
+
+- edit in the SEM condition setting pane, but it can not see GDS 
+- edit in the Sem ALGN dialog , change the parameter and apply that in server, however, this method only suit for adjust in a small range
+- use text editor such as vim ,and reload the spec file
+
+\#2. **delete the selected Row** : 
+
+scenario : after Sem ALGN, we found invalid SEM image is loaded  , we just want to delete it in the SEM Spec table, go back the SEM condition to delete it is  unfriendly .
+
+\#3. add function **save out Sem Spec with/wo result**, like the **save out the gaugeset with/wo results**.
+
+These two additional functions can be visible only if the Sem Spec table is opened.
+
+\#4. add function **save contour point result**
+
+usage : sometimes, we have to save out the error result of the edge point for further analysis.
+
+## Successful criteria
+
+### Functionality criteria
+
+Add the utility functions in the GUI and the behavior of these function are designed as the requirement.
