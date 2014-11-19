@@ -36,7 +36,6 @@ Basically , there are only 4 types of behavior of all the load model scenario in
 - $src_model = ADI model with Resist part, it means fem, femslg, generic, harmonic or harmonic2 , but not include None .
 - just change the resist term, but do not change the optical parameters,  and sync  it with model type of the $src_model , also give the default warning message box.
 
-
 3. ADI : $src_model = ADI model with Resist part , and load model | model type = all .
 
 - change the resist terms and the optical parameters,  and sync  it with model type of the $src_model , also give the default warning message box.
