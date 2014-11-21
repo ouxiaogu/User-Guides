@@ -154,7 +154,7 @@ Chapter 8. Section: iCal-based SRAF Gauge Generation
 gds @ bcnode060:/h/user/peyang/training/ical/hht_setup
 job @ bcnode060:/h/user/peyang/training/ical/
 
-|  job | GDS | BBox Lay | Contour Layer | PreOPC Layer | Normal `Chip_X & Chip_Y`
+|  job | GDS | BBox Lay | Contour Layer | PreOPC Layer | Normal `Chip_X & Chip_Y`?
 --- | ---| --- | ---| ---  | ---
 `HHT_t1` | `All_Chip_20.gds` | 20 | 100 | 10 | Yes 
 `HHT_t1` | `All_Chip_invalid_cell_name.gds` | 20 | 100 | 10| a cell group named as Test#-002#-001
