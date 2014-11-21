@@ -133,7 +133,6 @@ Chapter 8. Section: iCal-based SRAF Gauge Generation
 ## Additional Description in GUI side
 
 1. Input:
-
 - GDS Path :
 - Layer & Shift Edit Box
   - BBox layer ID : for defining layer/datatype of bounding box. (20)
@@ -146,5 +145,4 @@ Chapter 8. Section: iCal-based SRAF Gauge Generation
   - For Double Pattern Job, format of the mapping file is like "Chip_X Chip_Y  PSM:Delta_Focus(nm) PSM:Delta_Dose(%) binary:Delta_Focus(nm)(nm), binary:Delta_Dose(%)"
 
 2. output:
-
 - contour edge file and contour Spec file
