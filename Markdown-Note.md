@@ -159,4 +159,4 @@ job @ bcnode060:/h/user/peyang/training/ical/
 `HHT_t1` | `All_Chip_20.gds` | 20 | 100 | 10 | Yes 
 `HHT_t1` | `All_Chip_invalid_cell_name.gds` | 20 | 100 | 10| a cell group named as Test#-002#-001
 `HHT_t2` | `Averaged_All_Chip.gds` |  3 | 100 | 71 | Yes 
-`HHT_t2_mixname` | `Averaged_All_Chip_renamed.gds` | `chip_00_01`|   3 | 100 | 71 | rename to cell1 
+`HHT_t2_mixname` | `Averaged_All_Chip_renamed.gds` |    3 | 100 | 71 | `chip_00_01` is renamed to cell1 
