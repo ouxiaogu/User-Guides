@@ -132,17 +132,19 @@ Chapter 8. Section: iCal-based SRAF Gauge Generation
 
 ## Additional Description in GUI side
 
-1. Input:
+\#1. Input:
+
 - GDS Path :
 - Layer & Shift Edit Box
   - BBox layer ID : for defining layer/datatype of bounding box. (20)
   - Contour layer ID : for defining layer/datatype of contour . (100)
-  - Shift X[nm]  : the amount to be shifted on X direction. This shift_x will be added to center\_X (0)
-  - Shift Y[nm] : the amount to be shifted on Y direction. and shift_Y will be added to center\_Y.  (0) 
+  - Shift X[nm]  : the amount to be shifted on X direction. This shift\_x will be added to center\_X (0)
+  - Shift Y[nm] : the amount to be shifted on Y direction. and shift\_Y will be added to center\_Y.  (0) 
 - Chip X/Y v.s. Processing Windows mapping file
   - In most cases , format of the mapping file is `Chip_X Chip_Y  Delta_Focus(nm) Delta_Dose(%)`
   - For "mix and match" chip ID , e.g. Test#-002#-001 , then `Chip_X` and `Chip_Y` will be empty.
-  - For Double Pattern Job, format of the mapping file is like "Chip_X Chip_Y  PSM:Delta_Focus(nm) PSM:Delta_Dose(%) binary:Delta_Focus(nm)(nm), binary:Delta_Dose(%)"
+  - For Double Pattern Job, format of the mapping file is like `Chip_X Chip_Y  PSM:Delta_Focus(nm) PSM:Delta_Dose(%) binary:Delta_Focus(nm), binary:Delta_Dose(%)`
 
-2. output:
+\#2. output:
+
 - contour edge file and contour Spec file
