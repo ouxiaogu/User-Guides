@@ -148,3 +148,15 @@ Chapter 8. Section: iCal-based SRAF Gauge Generation
 \#2. output:
 
 - contour edge file and contour Spec file
+
+\#3. material&job:
+
+gds @ bcnode060:/h/user/peyang/training/ical/hht_setup
+job @ bcnode060:/h/user/peyang/training/ical/
+
+|  job | GDS | Normal `Chip_X & Chip_Y`
+--- | ---| ---
+`HHT_t1` | `All_Chip_20.gds` | Yes 
+`HHT_t1` | `All_Chip_invalid_cell_name.gds` | Yes 
+`HHT_t2` | `Averaged_All_Chip.gds` | Yes 
+`HHT_t2_mixname` | `Averaged_All_Chip_renamed.gds` | `chip_00_01` rename to cell1 
