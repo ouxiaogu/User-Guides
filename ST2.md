@@ -41,9 +41,32 @@ rem add it for folders
 pause
 ```
 
-## 2. FAQ
+## Appendix 1. frequently used sublime shortcut
+
+### text editting
+
+1. `ctrl` + `/` : comment
+2. `ctrl` + `shift` + `D` : line copy
+3. cursor
+  - `home` : line head
+  - `end` : line tail
+  - `ctrl` + `end` : code tail
+  - `ctrl` + `home` : code head
+  - multiple cursors
+    + `ctrl` + mouse click 
+  - `Alt` + `home` : select a line , can use to delete
+4. Upper/ Lower Case
+  - `ctrl + k + u`: upper_case 
+  - `ctrl + k + l`: lower_case
+5. SublimeREPL 
+  - `ctrl + ,` + `f`: run the file in REPL, recursive  
+
+
+## Appendix 2. FAQ
 
 Q1.  [Change the default syntax associated to some specific file type](http://stackoverflow.com/questions/7574502/set-default-syntax-to-different-filetype-in-sublime-text-2/8014142#8014142) ?
+
 A : `View -> Syntax -> Open all with current extension as... ->[your syntax choice].`
+
 
 

@@ -17,6 +17,10 @@ git config --global http.proxy http://zju\ouxiaogu:aaa@proxy.zju.edu.cn:3722
 2. git commit -m "1st comment"
 3. git push origin master  
 
+>**Note**
+> if you just want to clone the repository to local, use git clone
+> <code>git clone -l -s . C:\copy0816</code>
+
 ### 3. rollback to an specific version.
 I will use a real case as the example: Because of my misoperation, the critical SublimeREPL package can not work, so I need to rollback. 
 Firstly , copy the full SHA of the previous submit; Then set up the head to this version of submit; At last, push this version to local 
