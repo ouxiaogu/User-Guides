@@ -16,21 +16,12 @@ Several on line renders:
   - 不支持公式，但是对代码的显示是最漂亮的
 
 
-1.  What's the meaning of these numbers below in .src format source image? How to calculate the outer sigma value from the .src format file ?
+## bug scenario
+after any operation on the source ,like loading a new source or click `X Mirror`
 
-```
-[Parameters]
-step    0.010000
-[DATA]
--0.200000       -0.200000       0.000000
--0.190000       -0.200000       0.000000
--0.180000       -0.200000       0.000000
+ - It is correct to enable **OK** button , thus user can confirm their modification
+ - But Click `Symmetry Check` , the **OK** button is turn gray , the operation on the source can not be saved.
 
-```
-
-2. It is clear we cannot directly compute the outer sigma value from a .bmp / .pgm file. Then , why we put a outer sigma edit box in the illumination dialog ?
-
-And Qunhu ask if we can just set the outer sigma in the illumination as 1 when loading .bmp/ .pgm source file. http://brioncd.briontech.com/questions/5736/how-to-get-the-outer-sigma-value-of-a-bmppgm-source
-
-Thanks.
-Pengcheng
+## Improve Suggestion: 
+- ask Qunhu to modify the behavior of `X Mirror` , `Y Mirror` ,`45/135 Mirror` , when clicking `OK` in the warning message box, just save the modification by mirror operation , but do not quit the parent dialog
+- LongKai don't change the status of `OK` 
