@@ -22,7 +22,13 @@ Dec 24 - Dec 25
 
 **findBestFocus**: bestfocus = -70 nm
 
-**OpticalTunning**: RMS = 2.397, please refer to current setting & result in attached ppt, OpticalTuningResult.pptx
+**GaugeClean**:
+There are 2 prosperities for gauges in this case:
+1. gauges with the same group name like pitch, have the different pattern types.
+  - After Gauge check, I split the mixed group like pitch into two groups: pitch, 2D pitch for 1D, 2D respectively.
+2. many 2D pattern only have 1 gauge in the group.
+
+**OpticalTunning**: RMS = 2.52, please refer to current setting & result in attached ppt, OpticalTuningResult.pptx
 
 ## Clarification
 
@@ -41,7 +47,7 @@ Dec 24 - Dec 25
 1. Gauge Check, FEM data check
 2. SFF file setting
   - The MSD and OuterSigma value would not been loaded in, when the machine type in SFF and in tachyon GUI are not the same. With Qi-tong's help, unzip the SFF file, change MachineType in ADELler.xml from *AT:NXT1950i* to *NXT:1950i*, then generate the new SFF, and use it in job. The new SFF have been sent to How.
-  - loading SFF function in current tachyon UI is very confused, give a guide flow in PLT-26633.
+  - loading SFF function in current tachyon UI is very confused, give the flow map in PLT-26633
 3. Cost Weight adjustment
   - condition weight
   - anchor pattern
@@ -56,5 +62,4 @@ Dec 24 - Dec 25
   - introduce the Resist Model Formula
   - under fitting & over fitting 
   - Simple Resist Form in Optical Tuning, and the corresponding resist constraints
-
 
