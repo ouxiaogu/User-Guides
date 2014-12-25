@@ -24,8 +24,10 @@ Dec 24 - Dec 25
 
 **GaugeClean**:
 There are 2 prosperities for gauges in this case:
+
 1. gauges with the same group name like pitch, have the different pattern types.
   - After Gauge check, I split the mixed group like pitch into two groups: pitch, 2D pitch for 1D, 2D respectively.
+  
 2. many 2D pattern only have 1 gauge in the group.
 
 **OpticalTunning**: RMS = 2.52, please refer to current setting & result in attached ppt, OpticalTuningResult.pptx
@@ -62,4 +64,5 @@ There are 2 prosperities for gauges in this case:
   - introduce the Resist Model Formula
   - under fitting & over fitting 
   - Simple Resist Form in Optical Tuning, and the corresponding resist constraints
+
 
