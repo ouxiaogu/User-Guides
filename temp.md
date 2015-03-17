@@ -75,7 +75,7 @@
 **theta**
   - normalized AI RI to the same scale (0, 1)
   - model without truncation term , e.g., only A term, then AI-ct -> 0 , RI - thres ->0
-  - mode with truncation term, e.g., only Ap Term, then AI-ct-> 0 , RI - thresh - bo*ct, if we want to keep invariant RI(AI=0) = 0, theta must be added into RT, `AI = A - ct` , `RI = R - thres - b0*ct + theta`
+  - mode with truncation term, e.g., only Ap Term, then AI-ct-> 0 , RI - thresh - bo\*ct, if we want to keep invariant RI(AI=0) = 0, *theta* must be added into RT, then when `AI = A - ct = 0` , we can get `RI = R - thres - b0*ct + theta = 0` 
   
 **Parameterized Source** 
 
