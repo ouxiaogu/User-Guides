@@ -1,5 +1,4 @@
-
-PRD Template
+# Variable name validation check in DM.load_variables
 
 ##  Documentation History
 
@@ -25,7 +24,7 @@ Add some assertions and output specific log message in binary, so job can abort 
 
 ## 2. User Scenario, requirement and criteria 
 
-table 1. scenario, current behavior and expectation
+*table 1. scenario, current behavior and expectation*
 
 
 
@@ -35,7 +34,7 @@ table 1. scenario, current behavior and expectation
 
 Jobs with customerised terms and *load_variable()* are all in the scope of the variable name sanity check function.
 
-*Table 1. scope and limitations of this release*
+*Table 2. scope and limitations of this release*
 
 | Release Scope of Solution | Limitations Affecting Scope |
 --- | --- |
