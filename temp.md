@@ -47,8 +47,8 @@ The commonest user scenario is, there are several candidate models available, FE
   - ***WaferCD_BFShift***: the WaferCD best focus shift at every gauge
   -  ***WaferCD_DOF***: the wafercd DOF of every gauge
 4. **BF** is the averaged modelcd best focus. Here, the *modelcd_bestfocus = nomimal_focus + modelcd_focusshift*. *dof_rate* is the same with WaferCD's. 
-- ***ModelCD_BF***: the modelcd best focus at every gauge
--  ***ModelCD_DOF***: the modelcd DOF of every gauge
+ - ***ModelCD_BF***: the modelcd best focus at every gauge
+ -  ***ModelCD_DOF***: the modelcd DOF of every gauge
 
 #### GUI requirement
 
