@@ -94,7 +94,7 @@ iCal/SEM| |
   + Without clear definition of "it works". 
   + Assume R&D knows background, write a very simple flow.
 
-| scenario No. | user | pre-condition | action | output | post-condition
+| Scenario No. | User | Pre-condition | Action | Output | Post-condition
 | --- | --- | --- | --- | ---- | --- |
 |  1  |     |     |     |     |     |
 
@@ -154,12 +154,12 @@ iCal/SEM| |
 >Note 
 - Specify in the table. If one PRD has multiple features, give JIRA ID in each table cells
 
-Document | New | Modified | Dropped | Unchanged | 
-------  | -------   | ------- | ------- | 
-User Manual |   |   |  |   
+| Document | New | Modified | Dropped | Unchanged |
+---  | ---   | --- | --- | --- |
+| User Manual |   |   |  |   
 Release Note |  |   |   |
 Application notes |   |   |   | 
-Toolbox |   |   |   |
+Toolbox |   |   |   |   |
 
 ### 4.7 License requirements
 
