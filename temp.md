@@ -32,16 +32,18 @@ This Product Requirement Document (PRD) is prepared for <Product> ... :
 *Table 1, Goals and objectives*
 
 | Goal and Objectives | Criteria for Successful Completion 
---| -- |
-goal 1 | criteria 1 |
+|---| --- |
+|goal 1 | criteria 1 |
 
 ### 2.3 Scope and limitations
 
 *Table 2. Ticket scope coverage table*
 
+(general)
+
 | | Calibration | Gen | check
---| -- | -- | -- |
-DUV ADI|  |   |   | 
+|---| --- | --- | --- 
+|DUV ADI|  |   |   | 
 DUV AEI|  |   |   |
 NXE ADI|  |   |   |
 NXE AEI|  |   |   |
@@ -51,9 +53,11 @@ SRAF| |   |   |
 NTD|  |   |   |
 iCal/SEM| | -- |    |
 
+(for autocal)
+
 | | autoCal 
---| -- |
-DUV ADI|  |
+|---| --- 
+|DUV ADI|  |
 DUV AEI|  |
 NXE ADI|  |
 NXE AEI|  |
@@ -74,7 +78,7 @@ iCal/SEM| |
 
 |No. | Assumption | Implications for Project Success
 |--- | --- |
-01| Assumption1 | Implication1
+01| Assumption 1 | Implication 1
 02| Hitachi Hi-Frame contours are accurately extracted and/or averaged | linear solver  for all HHT contour iCal job
 03| Hitachi Hi-Frame contours are consistent with the gauges measured with Hitachi CD-SEM | linear solver  for HHT contour and gauge mixed iCal job.
 
@@ -89,6 +93,11 @@ iCal/SEM| |
 - do not
   + Without clear definition of "it works". 
   + Assume R&D knows background, write a very simple flow.
+
+| scenario No. | user | pre-condition | action | output | post-condition
+| --- | --- | --- | --- | ---- | --- |
+|  1  |     |     |     |     |     |
+
 
 
 ## 4. Product Level Requirements
@@ -160,7 +169,7 @@ Usually key features on speed and accuracy can claim license control
 
 | application | Key | Default value | Enabled
 --- | --- | --- | --- |
-     |     |     |     |
+ 1    |     |     |     |
 
 ## 5. Release successful factor
 
@@ -174,7 +183,7 @@ Usually key features on speed and accuracy can claim license control
 
 Success Factor | Measurable Criteria
 --- | --- 
-    |
+1    |
 
 ## 6. Risk
 
@@ -189,7 +198,7 @@ Success Factor | Measurable Criteria
 
 Nature of Risk | Risk Severity |  Likelihood
 --- | --- | --- 
-     |     |   
+     |  Low/Medium/High   |   
 
 ## Reference
 
@@ -197,4 +206,3 @@ Nature of Risk | Risk Severity |  Likelihood
 - Issue book links
 - Case links
 - Feasibility task links
-
