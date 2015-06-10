@@ -10,6 +10,7 @@ There are some brief introduction:
 ## Renders
 Several on line renders:
 
+<<<<<<< HEAD
 1. [Github](https://www.zybuluo.com/mdeditor)
   
     Not support to equation, but have the best syntax highlighter and layout 
@@ -60,3 +61,12 @@ Peng-cheng | Initial draft | 04/01/2015|
 | Approved |  |  |
 ```
 
+=======
+1. [StackEditor](https://stackedit.io/editor)
+2. [作业部落CMD editor](https://www.zybuluo.com/mdeditor)
+前面这两个站点有如下几个特点：
+  - 扩展效果支持良好 math expression, flow chart, table
+  - render 效果紧凑
+3. [github](https://www.zybuluo.com/mdeditor)
+  - 不支持公式，但是对代码的显示是最漂亮的
+>>>>>>> origin/master
