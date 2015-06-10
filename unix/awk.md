@@ -3,7 +3,8 @@ SYNOPSIS
 
 `gawk [ POSIX or GNU style options ] -f program-file [ -- ] file ...`
 
-`awk 'pattern {action}'` 
+`awk 'pattern {act
+ion}'` 
 
 
 | variable | meaning 
@@ -22,15 +23,11 @@ SYNOPSIS
 | 
 
 
+1.  Scenario 1: swap two columns of the file
+
+    `awk 'BEGIN{FS=OFS="\t"}{print $3, $2, $1} test.txt > test_o.txt'`
+2.  Scenario 2: delete file before a time
+    `ls -l | awk '$5 == "46" {print $9}' | xargs rm`
 
 
-Input.txt
-
-
-Output.txt
-
-
-
-
-e.g
 

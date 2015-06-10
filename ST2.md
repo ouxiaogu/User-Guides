@@ -21,7 +21,16 @@ You can find all the sublime text 2 package under its [package center](https://s
 [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing) is a Powerful Markdown package for Sublime Text with better syntax understanding and good color schemes .
 
 (2) **SublimeREPL**
-SublimeREPL - run an interpreter inside ST2 (Lua, Python , R, Ruby, Scala...)
+SublimeREPL - run an interpreter inside ST2 (Lua, Python , R, Ruby, Scala, PowerShell...)
+
+`PowerShell`:
+
+  Very fancy to support Linux style grep by :
+
+    ```shell
+    Select-string 'def savefig' .\*.py -ca
+    ```
+
 
 **Open in ST as Context Menu**
 
