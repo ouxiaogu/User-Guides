@@ -1,15 +1,3 @@
-
-Table of Contents:
-------------------
-
-1.  [Select Tools](#link_1)
-2.  [Zoom Features](#link_2)
-3.  [Navigation](#link_3)
-4.  [Change View](#link_4)
-5.  [Find and Select](#link_5)
-6.  [Acrobat Features](#link_6)
-7.  [The Rest](#link_7)
-
 ##  1. Select Tools
 
 - <kbd>H</kbd>  Use hand tool
