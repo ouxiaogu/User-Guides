@@ -20,7 +20,7 @@
 
 - <kbd>Ctrl</kbd>+<kbd>Y</kbd>: Zoom to specific Magnification
 
-3. Navigation
+## 3. Navigation
 
 - <kbd>Arrow Down</kbd>/<kbd>Arrow Up</kbd>:    Scroll down / scroll up
 
@@ -62,7 +62,7 @@
 
 - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd>:    De-select all
 
-6. Acrobat Features
+## 6. Acrobat Features
 
 - <kbd>Ctrl</kbd>+<kbd>D</kbd>: Document properties
 
@@ -80,7 +80,7 @@
 
 - <kbd>Ctrl</kbd>+<kbd>K</kbd>: Access Preferences
 
-7. The Rest
+## 7. The Rest
 
 - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd>:    Cascade all windows
 
