@@ -57,6 +57,7 @@ pause
 1. `ctrl` + `/` : comment
 2. `ctrl` + `shift` + `D` : line copy
 3. cursor
+  - `Ctrl` + `M`: move between '()' and '{}'
   - `home` : line head
   - `end` : line tail
   - `ctrl` + `end` : code tail
