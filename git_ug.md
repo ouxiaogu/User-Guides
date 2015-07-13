@@ -11,6 +11,19 @@ e.g.
 git config --global http.proxy http://zju\ouxiaogu:aaa@proxy.zju.edu.cn:3722
 ```
 
+If you decide at any time to reset this proxy and work without (no proxy), commands to use:
+
+```
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+Finally, to check the currently set proxy;
+
+```
+git config --global --get http.proxy
+git config --global --get https.proxy
+```
+
 ### 2.push local file to github
 
 1. git add *
