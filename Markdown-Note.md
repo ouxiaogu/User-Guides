@@ -10,7 +10,6 @@ There are some brief introduction:
 ## Renders
 Several on line renders:
 
-<<<<<<< HEAD
 1. [Github](https://www.zybuluo.com/mdeditor)
   
     Not support to equation, but have the best syntax highlighter and layout 
