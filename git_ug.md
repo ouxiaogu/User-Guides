@@ -1,6 +1,12 @@
 github user guide
 ====
 
+Access the help file in github.
+
+```
+git help clone
+```
+
 ### 1.when you use a proxy 
 
 ```
@@ -33,6 +39,8 @@ git config --global --get https.proxy
 >**Note**
 > if you just want to clone the repository to local, use git clone
 > <code>git clone -l -s . C:\copy0816</code>
+> 
+> Don't miss the source directory `.`. 
 
 **Clones a repository to your computer**
 ```
@@ -74,7 +82,8 @@ C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
 ### 5. remove files from the GitHub repository 
 
 Q: [How to remove files from the GitHub repository?](http://stackoverflow.com/questions/11121352/how-to-remove-files-from-the-github-repository)
-A: `git rm --cached $file_path`, to keep the local file and remove it from the repository
+A: `git rm --cached $file_path`, to keep the local file and remove it from the 
+repository
 
 ```
 C:\Localdata> git rm --cached .\9blog\BF.md
@@ -88,3 +97,6 @@ C:\Localdata\D\Note\lua [rc1 +0 ~0 -2 | +3 ~0 -0 !]> git commit -m "r141023"
  delete mode 100644 9blog/OT.md
 C:\Localdata\D\Note\lua [rc1 +3 ~0 -0 !]> git push
 ```
+
+Q2: [Exclude folder from github](http://stackoverflow.com/questions/16692710/exclude-folder-from-github)
+A: just add a file named as *.gitignore* in your repository. And Add the folder name  into this file. e.g. `legacy`
