@@ -10,9 +10,14 @@ There are some brief introduction:
 ## Renders
 Several on line renders:
 
+1. [IPython Notebook](http://ipython.org/)
+
+    - support languages: python 2 3, R, bash ...
+    - Integrated in [Anaconda (32-bit)](https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda-2.3.0-Windows-x86.exe) 
+    - support equation!
 1. [Github](https://www.zybuluo.com/mdeditor)
   
-    Not support to equation, but have the best syntax highlighter and layout 
+    Not support equation, but have the best syntax highlighter and layout 
 2. [StackEditor](https://stackedit.io/editor)
 3. [zybuluo CMD editor](https://www.zybuluo.com/mdeditor)
 
@@ -24,6 +29,14 @@ Several on line renders:
 ## conversion
 
 ### 1. from html to github style markdown
+
+Above all, introduce a wonderful website, [table generator](http://www.tablesgenerator.com/markdown_tables):
+
+It can convert the from the clipboard or html or csv or excel into these five format of tables.
+
+| 1            | 2           | 3           | 4               | 5                |
+|--------------|-------------|-------------|-----------------|------------------|
+| LaTeX Tables | HTML Tables | Text Tables | Markdown Tables | MediaWiki Tables |
 
 Maybe, more specifically, I can title this paragraph as **How to convert confluence page to github style markdown ?**.
 
