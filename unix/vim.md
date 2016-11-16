@@ -6,6 +6,10 @@
 `+,$d`: delete line(s) below current line
 dd
 
+`:set nu`: show number
+
+`UU`: undo
+
 ### set tab
 
 - In a codebase that uses 4 space characters for each indent, here are good settings to start with:
@@ -14,3 +18,5 @@ dd
 `set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4`
 
 ### read .vimrc
+
+

@@ -21,7 +21,7 @@ If you decide at any time to reset this proxy and work without (no proxy), comma
 
 ```
 git config --global --unset http.proxy
-git config --global --unset https.proxy
+git config --global --unset https.proxyc
 ```
 Finally, to check the currently set proxy;
 
@@ -64,6 +64,8 @@ Everything up-to-date
 3. git push origin rc1 --> orgin 相当于local sever(source,且已经切换到了local的rc1 branch了),后面的rc1 则是remote sever branch.
 4. git branch --> 再次显示发现已经有rc1,且已被选择
 
+git push origin \\devshare-brion.asml.com\cnfs-PEG\FEM\SHARED\product_tools\InstantTuning\
+
 ```
 C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
 * master
@@ -100,3 +102,89 @@ C:\Localdata\D\Note\lua [rc1 +3 ~0 -0 !]> git push
 
 Q2: [Exclude folder from github](http://stackoverflow.com/questions/16692710/exclude-folder-from-github)
 A: just add a file named as *.gitignore* in your repository. And Add the folder name  into this file. e.g. `legacy`
+
+
+
+### check
+
+
+1. diff two submit
+
+    `git diff HEAD~2`
+    `git log`
+    `git diff $commitID1 $commitID2`
+
+
+
+```
+git init 
+git add * # for add
+
+git commit -m 'before vocation'
+```
+
+```
+git status
+git add *
+git rm test.py # remove need to specify filename
+git commit -m 'after vocation'
+git diff HEAD~2
+git diff HEAD^ HEAD
+
+git reset --hard <tag/branch/commit id>
+```
+
+How to list all the files in a commit?
+
+git diff-tree --no-commit-id --name-only -r COMMIT_ID
+
+
+git config receive.denyCurrentBranch ignore
+
+
+1. change the remote repository into bare
+
+git config --bool core.bare true
+
+git status
+
+git push 
+
+1. show all the branch in local and origin
+
+git show-branch --list --all
+
+
+collaboration by git 
+
+```bash
+-- 1. clone a local repository for SHARED folder
+git clone $SHARED\ErrorSourceAnalysis
+-- 2. status, add & commit if your change list is tested and stable 
+git status
+git add xxx.py
+git commit -m 'your change'
+-- 3. push your change list into SHARED folder
+git push origin master
+-- if failed with error: failed to push some refs
+-- rebase your local repository with the latest code by pull
+git pull --rebase origin master
+-- if this error occurs when use pull: "refusing to pull with rebase: your working tree is not up-to-date"
+-- This means your tree is not the latest one, you still have some file to commit
+-- you can use step 2 or use these steps to omit the latest editing
+git stash      # save uncommitted changes
+git pull -r    # pull using rebase (translators omit "-r")
+git stash pop  # reapply previously saved changes
+-- After your fix the merge conflict in <some-file>, then you need to add it again, and rebase
+git add <some-file>
+git rebase --continue
+--  If you get to this point and realize and you have no idea what’s going on, Just execute the following command and you’ll be right back to where you started before you ran 
+git rebase --abort
+-- After done synchronizing with the central repository, you will be able to publish your changes successfully:
+git push origin master
+-- if still error: refusing to update checked out branch: refs/heads/master
+
+```
+
+
+git config receive.denyCurrentBranch updateInstead

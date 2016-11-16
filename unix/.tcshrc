@@ -1,0 +1,60 @@
+#!/bin/csh
+#* vim:set nohlsearch number incsearch showmatch : *#
+
+#set enviourment variables related to tachyon
+setenv FEM_HOME "/cnfs/PEG/FEM/$USER"
+setenv ypclua "/cnfs/PEG/FEM/$USER"/templates/lua/ypcAutoCal
+setenv NTD_ModelDB "/cnfs/PEG/FEM/SHARED/NTD_ModelDB"
+setenv gauge "h/data/dummydb/calibrate/job1/gauge"
+setenv sem "h/data/dummydb/calibrate/job1/sem"
+setenv result  "h/cache/dummydb/result/calibrate/job1"
+setenv hostlog "h/work/tachyonjob/host/host.log"
+setenv preplog "h/work/tachyonjob/prep/prep.log"
+setenv gds2serverlog "${HOME}/.tachyon/gds2server/log/"
+setenv ShareFiles "/cnfs/PEG/FEM/SHARED/ShareFiles"
+setenv release_version "tachyon_flex_20151200"
+setenv release_no "r2015.12.00"
+setenv CurrentRelease "/cnfs/software/$release_version/release"
+setenv release_lua "$CurrentRelease/LSF/app/$release_no/lua/femplus/customized/"
+setenv rc_version "tachyon_flex_20151200/rc16/"
+setenv rc_no "r2015.12.00rc16"
+setenv CurrentRC "/cnfs/software/$rc_version"
+setenv rc_lua "$CurrentRC/LSF/app/$rc_no/lua/femplus/customized/"
+#setenv TACHYOND_LICENSE_FILE 27500@sunlab2.briontech.com
+setenv nightly "/cnfs/software/tflex_nightly_full_package"
+setenv ReleaseTestFolder "/gpfs/PEG/FEM/SHARED/ReleaseTestJobs/r20151200"
+setenv FFTW_WRAPPER_LIBRARY_PATH "/gpfs/software/tachyon_flex_E4.0/pre-qa2/LSF/lib/FFT/3.0"
+
+# tachyon app alias
+alias tachyon_perl "$CurrentRelease/LSF/bin/tachyon_perl"
+alias tachyon_python "$CurrentRelease/LSF/python/bin/tachyon_python"
+alias tflex "$CurrentRelease/LSF/bin/tflex"
+alias tflex_mysql "$CurrentRelease/LSF/bin/tflex_mysql"
+alias load2tflex "tachyon_perl $CurrentRelease/LSF/perl/load2tflex.pl "
+alias chperm "tachyon_perl $CurrentRelease/LSF/perl/chperm.pl -p 666 "
+alias clonejob "tachyon_perl $CurrentRelease/LSF/perl/clonejob.pl "
+alias tachyon_release "/cnfs/PEG/FEM/SHARED/ShareFiles/tools/tachyon_release.sh"
+alias test_gui "$CurrentRC/LSF/bin/tflex"
+alias nightly_gui "$nightly/LSF/bin/tflex&"
+alias release_gui "$CurrentRelease/LSF/bin/tflex"
+alias bcell "/gpfs/software/tachyon_flex_20150100/release/LSF/app/r2015.01.00/bin/bcell -O lc=1,sem_ys_data=1 "
+
+# Model PEG model_tool_box
+alias compareJobSetup "tachyon_perl /gpfs/PEG/FEM/qizhang/code/perl/tflex/model_tool_box/compareJobSetup.pl "
+alias outputGaugeGeomtrySize "tachyon_perl /gpfs/PEG/FEM/qizhang/code/perl/tflex/model_tool_box/outputGaugeGeomtrySize.pl "
+alias outputGaugeGeomtrySized "tachyon_perl -d /gpfs/PEG/FEM/qizhang/code/perl/tflex/model_tool_box/outputGaugeGeomtrySize.pl "
+alias findNeighborGauge "tachyon_perl  /gpfs/PEG/FEM/qizhang/code/perl/tflex/model_tool_box/findSimilarGauge.pl  "
+alias findSimilarGauge "tachyon_perl  /gpfs/PEG/FEM/qizhang/code/perl/tflex/model_tool_box/findSimilarGauge.pl  -c size "
+alias cleanJobFolder "tachyon_perl /gpfs/PEG/FEM/qizhang/code/perl/tflex/model_tool_box/cleanJobFolder.pl "
+
+
+#Other alias
+alias refresh "source $HOME/.cshrc"
+alias reset "reset && resize >/dev/null && kill -WINCH $$"
+alias myquota /cnfs/PEG/PLT/SHARED/hpcutil/userbin/myquota
+set filec   #turn on filename completion
+set autolist
+set addsuffix
+alias lua 'lua -i ~/.lua_ini '
+alias used 'du -sh'
+alias duf 'du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'

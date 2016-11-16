@@ -7,6 +7,7 @@ Answer: start Excel a second time from the Start menu or from a shortcut on your
 ## Cell Rename
 
 Formula Description (Result)
+
 =LEFT(A2, LEN(A2)-2)  Removes last two characters from contents of A2 (Vitamin)
 =RIGHT(A3, LEN(A3)-8) Removes first 8 characters from A3 (B1)
 
@@ -29,6 +30,8 @@ Sub AddTextOnRight()
   Next
 End Sub
 ```
+
+
 
 ## Nested If function
 
