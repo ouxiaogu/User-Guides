@@ -1,20 +1,17 @@
 github user guide
 ====
 
-Access the help file in github.
+Firstly, go to git official manual by following command:
 
-```
-git help clone
-```
+`git help clone`
+
+## started
 
 ### 1.when you use a proxy 
 
-```
+```shell
 git config --global http.proxy http://{domain}\\\{username}:{password}@{proxy ip}:{proxy port}
-```
-e.g.
-```
-git config --global http.proxy http://zju\ouxiaogu:aaa@proxy.zju.edu.cn:3722
+git config --global http.proxy http://zju\ouxiaogu:aaa@proxy.zju.edu.cn:3722 # example
 ```
 
 If you decide at any time to reset this proxy and work without (no proxy), commands to use:
@@ -23,6 +20,7 @@ If you decide at any time to reset this proxy and work without (no proxy), comma
 git config --global --unset http.proxy
 git config --global --unset https.proxyc
 ```
+
 Finally, to check the currently set proxy;
 
 ```
@@ -153,7 +151,7 @@ C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
 ```
 
 
-### diff
+### 5. diff
 
 
 1. diff two submit
@@ -168,7 +166,7 @@ C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
 `git show-branch --list --all`
 
 
-### 3. what if fail to pull the latest commit in github
+### 6. what if fail to pull the latest commit in github
 
 ```shell
 git pull origin master --force
@@ -199,18 +197,29 @@ remove the file manually to continue. -->
 
     `git add *`
 
-2. git to review the added files is what you want, only show the name of staged file:  
+2. git to review the added files is what you want, recommend to use `git diff file` before `add` and `git diff --name-only --cached` after `add`:  
 
-    `git diff --name-only --cached`
+    `git diff` # used before `add`, diff between working tree and staged file
+
+    `git diff file` # used before `add`, diff between working tree and staged file
+
+    `git diff --name-only --cached` # used after `add`, just show name
+
+    `git diff --cached` or `git diff --stages` # used after `add`, "git commit" without "-a" option.
+
+    `git diff HEAD` # used before `add`, diff between working tree and last commit, commit w/i "-a", "git commit -a", i.e., firstly add(work tree => staged); then commit (staged => commit)
+    
 
 3. git operation to undo all the add or delete the unwanted add:
     
     `git reset` # git to undo 'git add *'
+    
     `git rm --cached -r${folder}/${file}` // remove all the file in git repo, but not from local disk
 
 4. when it's ready, merge 'add *' & 'commit' by `commit -a`, or simply use `add` then `commit`: 
     
     `git commit -a -m 'my comment for the commit'`
+
     `git commit -m 'my comment for the commit'`
 
 5. sync the commit stable enough into remote git by 
@@ -218,12 +227,15 @@ remove the file manually to continue. -->
     `git push origin master` 
 
     What if below error:
-    <!-- fatal: could not read Username for 'https://github.com': Invalid argument -->
+    
+    *fatal: could not read Username for 'https://github.com': Invalid argument*
+
     `git remote set-url origin https://{username}:{password}@github.com/{username}/{repository}.git`
 
 6. git List files in local git repo? 
     
     `git ls-files` # pure file name
+
     `git ls-tree --full-tree -r HEAD` # list the files and tracked commit id
 
 7. Remove directory from git but NOT local:
@@ -253,10 +265,10 @@ remove the file manually to continue. -->
     `git commit -m "Resolved merge conflict by incorporating both suggestions."`
 
 
+## cheetsheet
 
-
-`git stash` - 该命令保存您的本地修改并恢复工作目录以匹配HEAD提交。它允许您将未commit的修改存储到名为stash的缓冲区中，并从正在处理的分支中删除它。您可以稍后通过apply stash to retrieve them。
+- `git stash` - 该命令保存您的本地修改并恢复工作目录以匹配HEAD提交。它允许您将未commit的修改存储到名为stash的缓冲区中，并从正在处理的分支中删除它。您可以稍后通过apply stash to retrieve them。
     
     `git stash apply          # apply stashed changes; see below about --index`
 
-`git commit` - 这会记录下次推送的更改，此事件也会记录在历史记录中。
+- `git commit` - 这会记录下次推送的更改，此事件也会记录在历史记录中。
