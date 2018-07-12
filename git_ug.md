@@ -217,6 +217,10 @@ remove the file manually to continue. -->
     
     `git push origin master` 
 
+    What if below error:
+    <!-- fatal: could not read Username for 'https://github.com': Invalid argument -->
+    `git remote set-url origin https://{username}:{password}@github.com/{username}/{repository}.git`
+
 6. git List files in local git repo? 
     
     `git ls-files` # pure file name
