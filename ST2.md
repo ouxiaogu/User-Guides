@@ -81,7 +81,7 @@ A : `View -> Syntax -> Open all with current extension as... ->[your syntax choi
 
 ## Appendix 3. ST Preference user
 
-`JSON
+```json
 {
   "auto_complete_commit_on_tab": true,
   "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
@@ -122,4 +122,4 @@ A : `View -> Syntax -> Open all with current extension as... ->[your syntax choi
   "wrap_width": 120
 }
 
-`
+```
