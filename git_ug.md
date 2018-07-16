@@ -163,7 +163,7 @@ C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
 
 2. show all the branch in local and origin
 
-`git show-branch --list --all`
+    `git show-branch --list --all`
 
 
 ### 6. what if fail to pull the latest commit in github

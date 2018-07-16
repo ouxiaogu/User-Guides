@@ -79,4 +79,47 @@ Q1.  [Change the default syntax associated to some specific file type](http://st
 A : `View -> Syntax -> Open all with current extension as... ->[your syntax choice].`
 
 
+## Appendix 3. ST Preference user
 
+`JSON
+{
+  "auto_complete_commit_on_tab": true,
+  "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+  "dictionary": "Packages/Language - English/en_US.dic",
+  "draw_white_space": "all",
+  "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace"],
+  "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "_*", ".*"],
+  "font_size": 14.0,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage",
+    "Lua Dev",
+    "FileHeader"
+  ],
+  "ignored_words":
+  [
+    "iterable"
+  ],
+  "indent_guide_options":
+  [
+    "draw_normal",
+    "draw_active"
+  ],
+  "phoenix_color_blue": true,
+  "phoenix_highlight_current_tab": true,
+  "rulers":
+  [
+    80, 120
+  ],
+  "spell_check": true,
+  "tab_size": 4,
+  "theme": "Phoenix Dark.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "use_simple_full_screen": true,
+  "vintage_start_in_command_mode": true,
+  "word_wrap": true,
+  "wrap_width": 120
+}
+
+`
