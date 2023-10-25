@@ -85,11 +85,7 @@ repository
     *.pgm
 
     # find . -executable -type f >>.gitignore
-    apps/mxp/testutil
-    apps/mxp/mxp1
-    apps/unittest/testutil
-    util/crop
-    util/d2d
+    /unittest/testutil
     ```
 
 1. `git init` & `git add .` # init the repository and add changes
@@ -133,19 +129,19 @@ Everything up-to-date
 3. `git push origin rc1` --> orgin 相当于local sever(source, 且已经切换到了local的rc1 branch了),后面的rc1 则是remote sever branch.
 4. `git branch` --> 再次显示发现已经有rc1,且已被选择
 
-`git push origin \\devshare-brion.asml.com\cnfs-PEG\FEM\SHARED\product_tools\InstantTuning\`
+`git push origin $remote-branch`
 
 ```
-C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
+ [master +0 ~3 -0]> git branch
 * master
-C:\Localdata\D\Note\lua [master +0 ~3 -0]> git checkout -b rc1
+ [master +0 ~3 -0]> git checkout -b rc1
 M       .gitattributes
 Switched to a new branch 'rc1'
-C:\Localdata\D\Note\lua [rc1 +0 ~3 -0]> git push origin rc1
+ [rc1 +0 ~3 -0]> git push origin rc1
 Total 0 (delta 0), reused 0 (delta 0)
 To https://github.com/ouxiaogu/lua_note.git
  * [new branch]      rc1 -> rc1
-C:\Localdata\D\Note\lua [master +0 ~3 -0]> git branch
+ [master +0 ~3 -0]> git branch
   master
 * rc1
 ```
